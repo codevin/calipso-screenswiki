@@ -1,0 +1,64 @@
+{
+  "name": "screenswiki",
+  "type": "front",
+  "description": "Theme used to render /screens namespace. for creating and managing UI screens",
+  "version": "0.1.0",
+  "author": "Vinod Kulkarni <vinod.kulkarni@gmail.com>",
+  "layouts": 
+  {
+     "admin": {
+        "layout": {
+           "template": "admin.html",
+           "sections": {
+               "styles": {"template": "styles.html", "varyParams":false},
+               "scripts": {"template": "scripts.html"},
+               "header": {"template": "header.html", "cache":true, "varyParams":false},
+               "messages": {"template": "messages.html"},
+               "body": {"template": "body.html"}
+           } 
+        }
+     },
+     "view": {
+        "layout": {
+           "template": "view.html",
+           "sections": {
+              "styles": {"template": "styles.html", "cache":true, "varyParams":false},
+              "scripts": {"template": "scripts.html"},
+              "header": {"template": "header.html", "cache":true, "varyParams":false},
+              "messages": {"template": "messages.html"},
+              "body": {"template": "body.html"}
+          }
+       }
+     },
+    "list": {
+        "layout": { 
+           "template": "list.html", 
+           "sections": {
+              "styles": {"template": "styles.html", "cache":true, "varyParams":false},
+              "scripts": {"template": "scripts.html"},
+              "header": {"template": "header.html", "cache":true, "varyParams":false},
+              "messages": {"template": "messages.html"},
+              "body": {"template": "body.html"}
+           }
+        }
+    },
+    "edit": {
+        "layout": { "template": "edit.html", "copyFrom": "admin" }
+    },
+    "raw": {
+        "layout": { "template": "raw.html", "copyFrom": "admin" }
+    },
+    "default": {
+        "layout": {
+           "template": "default.html",
+           "sections": {
+              "styles": {"template": "styles.html", "cache":true, "varyParams":false},
+              "scripts": {"template": "scripts.html"},
+              "header": {"template": "header.html", "cache":true, "varyParams":false},
+              "messages": {"template": "messages.html"},
+              "body": {"template": "body.html"}
+          }
+       }
+    }
+  }
+}
